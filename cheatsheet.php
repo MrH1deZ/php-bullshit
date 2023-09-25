@@ -280,4 +280,29 @@ $result = addNumbers(100, $result); // You can add more numbers and it will calc
 // You need to enter the new number first and then $result the numbers goes from left to right.
 echo $result; // This time it will shows 198 because the first result is 98 and on the second result we add 100 more
 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Global Variables and Scopes
+
+//Global scope is outside specific function or statement
+// Local scope is made in the specific function
+
+
+$x = "outside";  // This is global scope variable
+
+function convert() {
+
+    global $x;
+    $x = "inside";  // This is local scope variable
+}
+
+echo $x; // This will print global variable
+echo "<br>";
+convert(); // This functions should make the variable to print inside information
+echo $x; // After the function this echo should print the information inside the function
+
+
+
 ?>
