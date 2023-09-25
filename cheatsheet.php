@@ -1,0 +1,81 @@
+<?php
+
+
+//Variables
+$variable_name = 'string';
+$variable_name = 100; //Number
+// Variable Cannot start with number like:
+$0variable
+// Variable Cannot be used with '-' sign:
+$variable-number  //It breaks
+
+
+
+
+//MATHS
+//Signs
++ - * / % ** ++ -- (++)(--)
+
+echo 100 + 100;
+    echo "<br>";
+    echo 100 - 50;
+    echo "<br>";
+
+    echo 45 + 34 * 45 /21 -45;
+    echo "<br>";
+    echo 5 + 5 * 10;
+    echo "<br>";
+    echo 5+5 * 10;  // this will not math the + first
+    echo "<br>";
+    echo (5+5) * 10; //this will math first the + then will multiplie
+    echo "<br>";
+    $number = 10;
+    $number2 = 10;
+
+    echo $number * $number2;
+
+
+
+
+//Arrays
+//You can type the array two ways:
+$array_var_name = array(); //This is used but it's old
+$array_var_name_new = []; // This is same as the other but the new one and you don't need to type 'array'.
+
+//Array Functions
+$array_variable_name = ['data']; //This is regular array and it start counts from 0
+$array_associative_var_name = ["first_key" => 'data_it_shows']; // This is associative array that you can use with keys that you set like 'first_key' and  it will not count with numbers.
+
+print_r($array_variable_name);   //Print all data in an array.
+echo $array_variable_name[0]; // Echo will print only the data from the array that you choose in '[]'
+// It can be eighter [0] or for associative [first_key] which will call the data.
+
+
+
+//if statements
+// In the () infront of if, elseif there should be a condition like checks or something else that should be fullfiled in order to run the command below.
+
+if(condition) {
+    echo "Will run this command if the condition is fulfilled.";
+}
+elseif(condition) {
+    echo "Will run this command if the contidion from 'if' is not fulfilled";
+}
+else {
+    echo "Will run this command if none of the conditions are ful;filled.";
+}
+
+
+if(3 > 10){   // If 3 > 10 if should run the echo below
+    echo "three is less than ten";  // This is not runned because 3 is not higher than 10
+}   
+elseif(4 < 5) { // elseif 4 < 5 if 5 is bigger than 4 it will run the echo below
+    echo "Thats true"; // This should be runned because 5 is bigger than 4
+} 
+else {    // This will be executed if none of the conditions are fullfilled
+    echo  "it is not";  // If none of the if, elseif conditions are fullfilled this echo will run
+}
+
+
+
+?>

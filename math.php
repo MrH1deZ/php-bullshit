@@ -18,7 +18,7 @@
     echo "<br>";
     echo 5 +5 * 10;
     echo "<br>";
-    echo 5+5 * 10;  // this will noth math the + first
+    echo 5+5 * 10;  // this will not math the + first
     echo "<br>";
     echo (5+5) * 10; //this will math first the + then will multiplie
     echo "<br>";
