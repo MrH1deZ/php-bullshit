@@ -266,7 +266,7 @@ echo "<br>";
 
 function addNumbers($num1, $num2) {// This is the same but with 2 variables in the condition field
 
-    $sum = $num1 + $num2; We are making a variable that is calculating the two variables in the condition section
+    $sum = $num1 + $num2; //We are making a variable that is calculating the two variables in the condition section
     return $sum;  //This is returning the result from the $sum variable, but it won't show
 
 }
@@ -303,6 +303,77 @@ echo "<br>";
 convert(); // This functions should make the variable to print inside information
 echo $x; // After the function this echo should print the information inside the function
 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Constant //
+// Constant is nepromenliva
+
+define("number", 10200); // This is a constant which has a name "number" and a value "10200"
+// If I try changing the value like
+number = 2000; // This won't work because "number" is constant and the value cannot be changed
+
+echo number; // This will print the value of the constant "number"
+
+// But in a simple variable you can change the value creating the same variable with different value like
+$numb = 10;  // This is the first created variable with value 10
+//If I echo the variable it should display 10, but if I change the value like this:
+$numb = 1000; // This is the changed value
+echo $numb; // This echo will print the reasigned value which is 1000
+
+/*
+Now is possible to create a constant using the keyword "const" but it does not work the same as the define() function but it is very similar. 
+*/
+const CONSTANT = 'Hello World';
+//It is possible to assign an array with this method like so.
+
+
+const ANIMALS = array('dog', 'cat', 'bird');
+
+
+/*Some examples from the docs below, so you can copy it and try it in your php file. */
+
+// Works as of PHP 5.3.0
+    
+const CONSTANT = 'Hello World';
+    
+    
+echo CONSTANT;
+    
+    
+// Works as of PHP 5.6.0
+    
+const ANOTHER_CONST = CONSTANT.'; Goodbye World';
+    
+echo ANOTHER_CONST;
+    
+    
+const ANIMALS = array('dog', 'cat', 'bird');
+    
+echo ANIMALS[1]; // outputs "cat"
+    
+    
+// Works as of PHP 7
+    
+define('ANIMALS', array(
+    
+'dog',
+    
+'cat',
+    
+'bird'
+    
+));
+    
+echo ANIMALS[1]; // outputs "cat"
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//
 
 
 ?>
